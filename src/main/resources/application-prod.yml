@@ -1,0 +1,16 @@
+server:
+  port: 8081
+  context-path: /dataupgrade
+
+spring:
+    datasource:
+        db1:
+            driver-class-name: com.mysql.jdbc.Driver
+            url: jdbc:mysql://10.1.1.32:3306/xy_sf?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true&useAffectedRows=true&useSSL=true
+            username: root
+            password: ipharmacare
+        db2:
+            driver-class-name: com.mysql.jdbc.Driver
+            url: jdbc:mysql://10.1.1.32:3306/xy_sf_full?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true&useAffectedRows=true&useSSL=true
+            username: root
+            password: ipharmacare
