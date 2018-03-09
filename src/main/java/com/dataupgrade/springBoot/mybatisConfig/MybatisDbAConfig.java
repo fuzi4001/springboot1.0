@@ -36,9 +36,11 @@ public class MybatisDbAConfig {
      *
      * 属性
      SqlSessionFactory 有一个单独的必须属性,就是 JDBC 的 DataSource。这可以是任意 的 DataSource,其配置应该和其它 Spring 数据库连接是一样的。
+     *
      * @return
      * @throws Exception
      */
+    //classpath:mapper/ds/**/*.xml 表示获取ds路径下的所有xml
     @Bean
     public SqlSessionFactory sqlSessionFactory1() throws Exception {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
