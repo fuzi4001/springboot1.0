@@ -54,13 +54,7 @@ public class TableUpController {
      */
     private List<String>  getTableSqlLisr(){
         List<String> tableSqlList = new LinkedList<>();
-        tableSqlList.add("alter table sf_ipt_audit_result_order add event_no varchar(64) DEFAULT NULL comment '就诊流水号',add patient_id varchar(64) DEFAULT '' comment '患者号(院内病人唯一ID)',add UNIQUE KEY `zone_event_patient_id` (`zone_id`,`event_no`,`patient_id`) USING BTREE;");
-        tableSqlList.add("alter table sf_ipt_bacterial_report_item add event_no varchar(64) DEFAULT NULL comment '就诊流水号',add patient_id varchar(64) DEFAULT '' comment '患者号(院内病人唯一ID)',add UNIQUE KEY `zone_event_patient_id` (`zone_id`,`event_no`,`patient_id`) USING BTREE;");
-        tableSqlList.add("alter table sf_ipt_drug_sensitive_item add event_no varchar(64) DEFAULT NULL comment '就诊流水号',add patient_id varchar(64) DEFAULT '' comment '患者号(院内病人唯一ID)',add UNIQUE KEY `zone_event_patient_id` (`zone_id`,`event_no`,`patient_id`) USING BTREE;");
-        tableSqlList.add("alter table sf_ipt_patient_engine_order add event_no varchar(64) DEFAULT NULL comment '就诊流水号',add patient_id varchar(64) DEFAULT '' comment '患者号(院内病人唯一ID)',add UNIQUE KEY `zone_event_patient_id` (`zone_id`,`event_no`,`patient_id`) USING BTREE;");
-        tableSqlList.add("alter table sf_ipt_herb_medical_order_item add event_no varchar(64) DEFAULT NULL comment '就诊流水号',add patient_id varchar(64) DEFAULT '' comment '患者号(院内病人唯一ID)',add UNIQUE KEY `zone_event_patient_id` (`zone_id`,`event_no`,`patient_id`) USING BTREE;");
-        tableSqlList.add("alter table sf_ipt_audit_result_item add event_no varchar(64) DEFAULT NULL comment '就诊流水号',add patient_id varchar(64) DEFAULT '' comment '患者号(院内病人唯一ID)',add UNIQUE KEY `zone_event_patient_id` (`zone_id`,`event_no`,`patient_id`) USING BTREE;");
-        tableSqlList.add("alter table sf_ipt_vital_sign_related add key_date date DEFAULT NULL comment '业务年月日';");
+              tableSqlList.add("alter table ipt_related add date date DEFAULT NULL comment '年月日';");
         return tableSqlList ;
     }
 
