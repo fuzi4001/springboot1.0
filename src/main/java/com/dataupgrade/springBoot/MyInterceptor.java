@@ -6,6 +6,13 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+/**
+ * Filter过滤器：拦截web访问url地址。
+ Interceptor拦截器：拦截以 .action结尾的url，拦截Action的访问。
+ Spring AOP拦截器：只能拦截Spring管理Bean的访问（业务层Service）
+ */
+
 public class MyInterceptor implements HandlerInterceptor {
 
     //在请求处理之前进行调用（Controller方法调用之前
